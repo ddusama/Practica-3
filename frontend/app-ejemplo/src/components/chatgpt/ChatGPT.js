@@ -35,7 +35,7 @@ const ChatGPT = () => {
             <Text style={styles.title}>Hola, puedes preguntarme cualquier duda!</Text>
             <FlatList
                 data={data}
-                keyExtractor={(item, index) => index.toString()}
+                keyExtractor={(index) => index.toString()}
                 style={styles.body}
                 renderItem={({ item }) => (
                     <View style={{ flexDirection: 'row', padding: 5 }}>
