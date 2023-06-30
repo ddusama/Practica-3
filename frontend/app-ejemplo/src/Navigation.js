@@ -4,6 +4,7 @@ import ProfileCard from "./components/home/ProfileCard";
 import { MaterialCommunityIcons } from "react-native-vector-icons"
 import List from "./components/list/List";
 import Name from "./components/name/Name"
+import ChatGPT from "./components/chatgpt/ChatGPT";
 
 const Tab = createBottomTabNavigator();
 
@@ -26,6 +27,12 @@ export default function Navigation() {
                 tabBarLabel: "Nombre",
                 tabBarIcon: ({ color, size }) => {
                     return <MaterialCommunityIcons name="pencil-circle-outline" color={color} size={size} />
+                }
+            }} />
+            <Tab.Screen name="chatgpt" component={ChatGPT} options={{
+                tabBarLabel: "ChatGPT",
+                tabBarIcon: ({ color, size }) => {
+                    return <MaterialCommunityIcons name="chat-processing" color={color} size={size} />
                 }
             }} />
         </Tab.Navigator>

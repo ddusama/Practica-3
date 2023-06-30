@@ -31,7 +31,7 @@ const Name = () => {
                 style={styles.button}
                 onPress={toggleView}
             >
-                <Text style={styles.textButton}>Aceptar</Text>
+                <Text style={styles.textButton}>Saludar</Text>
             </TouchableOpacity>
             {view && (
                 <View>
@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         marginRight: 20,
         marginBottom: 20,
+        padding:7,
         fontWeight: '400',
         paddingLeft: 10,
         borderWidth: 1,
@@ -68,8 +69,8 @@ const styles = StyleSheet.create({
         borderColor: '#DE5F65',
         backgroundColor: '#DE5F65',
         padding: 10,
-        marginLeft: 20,
-        marginRight: 20,
+        marginLeft: 400,
+        marginRight: 400,
         borderRadius: 7,
     }, textButton: {
         color: 'white',
@@ -85,8 +86,8 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     }, clear: {
         borderWidth: 1,
-        borderColor: 'blue',
-        backgroundColor: 'blue',
+        borderColor: '#1635BE',
+        backgroundColor: '#1635BE',
         padding: 10,
         marginLeft: 400,
         marginRight: 400,
