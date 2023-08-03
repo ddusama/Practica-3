@@ -3,7 +3,7 @@ import { TextInput, View, StyleSheet, Text, FlatList, TouchableOpacity } from "r
 import { OpenAIApi, Configuration } from 'openai'
 
 const conf = new Configuration({
-    apiKey: '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'
+    apiKey: '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'
 })
 
 const openai = new OpenAIApi(conf)

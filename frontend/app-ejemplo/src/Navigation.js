@@ -5,6 +5,7 @@ import { MaterialCommunityIcons } from "react-native-vector-icons"
 import List from "./components/list/List";
 import Name from "./components/name/Name"
 import ChatGPT from "./components/chatgpt/ChatGPT";
+import ChatPDF from "./components/chatpdf/ChatPDF";
 
 const Tab = createBottomTabNavigator();
 
@@ -31,6 +32,12 @@ export default function Navigation() {
             }} />
             <Tab.Screen name="chatgpt" component={ChatGPT} options={{
                 tabBarLabel: "ChatGPT",
+                tabBarIcon: ({ color, size }) => {
+                    return <MaterialCommunityIcons name="chat-processing" color={color} size={size} />
+                }
+            }} />
+             <Tab.Screen name="chatpdf" component={ChatPDF} options={{
+                tabBarLabel: "ChatPDF",
                 tabBarIcon: ({ color, size }) => {
                     return <MaterialCommunityIcons name="chat-processing" color={color} size={size} />
                 }
